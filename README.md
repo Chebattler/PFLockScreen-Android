@@ -50,6 +50,11 @@ fragment.setCodeCreateListener(new PFLockScreenFragment.OnPFLockScreenCodeCreate
   public void onCodeCreated(String encodedCode) {
 		//TODO: save somewhere;
 	}
+	
+	@Override
+  public void onNewCodeValidationFailed() {
+		//TODO: actions in case of failure
+  }
 });
 //TODO: show fragment;
 ```
